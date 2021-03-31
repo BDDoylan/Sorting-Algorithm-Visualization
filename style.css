@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow: scroll;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    font-family: 'Big Shoulders Stencil Text', cursive;
+}
+header {
+    background-color:rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 45px;
+    color:rgb(255, 123, 0);
+    margin: 0 auto;
+    
+}
+.navigation{
+    position: absolute;
+    top: 40px;
+    margin-right: 20px;
+    right: 0;
+}
+
+img.bg{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    margin-bottom: -4px;
+}
+
+.Logo {
+    position: relative; 
+    top: -13px;
+    display: inline-block;
+    width: 170px;
+    height: 140px;
+    z-index: 1;
+}
+
+h1 {
+    display: block;
+    margin-top: 15px;
+    opacity: 50%;
+}
+h2 { 
+    font-size: 50px;
+}
+
+li {
+    display: inline-block;
+    text-align: right;
+}
+
+nav {
+    width: auto;
+    display: inline-block;
+}
+
+a{
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 35px;
+    color: #000000;
+    background: rgb(143, 70, 1);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    width: 60px;
+    height: 20px;
+    text-align: center;
+}
+
+.About-section {
+    background-color: rgb(0, 0, 0);
+}
+small  {
+    font-size: 25px;
+    min-width: 1200px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.about-title, .sort-title {
+    text-align: Center;
+    margin-bottom: 60px;
+    font-size: 80px;
+}
+
+.contact-title {
+    text-align: center;
+    font-size:  80px;
+    margin-bottom: 100px;;
+}
+
+.container2 {
+    height: 1312px;
+    color:rgb(131, 75, 2);
+    text-align: center;
+}
+.Sort-section {
+    background-color: rgb(131, 75, 2);
+    text-align: center;
+    height: 1312px;
+}
+
+.sort-options {
+    width: 180px;
+    height: 65px;
+    border: none;
+    outline: none;
+    color: orange;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.sort-options:before {
+    content: '';
+    background: linear-gradient(45deg, rgba(255,115,0,1) 0%, rgba(252,213,69,1) 100%);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -2;
+    filter: blur(10px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 2s linear infinite;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+/*
+.sort-options:active {
+    color: rgb(0, 0, 0)
+}
+
+.sort-options:active:after {
+    background: transparent;
+}*/
+
+.sort-options:hover:before {
+    opacity: 1;
+}
+
+
+.sort-options:after {
+    z-index: -2;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 100% 0; }
+    100% { background-position: 0 0; }
+}
+
+.Contact-section {
+    background-color: rgb(0, 0, 0);
+    background-image: url("justMoon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container3 {
+    height: 1312px;
+    color:rgb(131, 75, 2);
+}
+.ny-img {
+    display: inline-block;
+    margin-right: 100px;
+    border: 5px solid rgb(116, 56, 0);
+    padding: 10px;
+    box-shadow: 10px 10px rgb(173, 84, 1);
+}
+
+.sd-img {
+    display: inline-block;
+    margin-left: 100px;
+    border: 5px solid rgb(116, 56, 0);
+    padding: 10px;
+    box-shadow: 10px 10px rgb(173, 84, 1);
+    
+}
+.about-text {
+    display: inline-block;
+    border: 4px solid rgb(98, 56, 0);
+    text-align: center;
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 5px;
+    box-shadow: 10px 10px rgb(173, 84, 1);
+}
+
+button{
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+    margin: 20px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    outline: 0;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+}
+
+
+h3 {
+    font-size: 35px;
+}
+
+.doylan-contact {
+    display: block;
+    float: left;
+    margin-left: 200px;
+    text-align: center;
+    border: 4px solid rgb(98, 56, 0);
+    padding: 20px;
+    box-shadow: 10px 10px rgb(173, 84, 1);
+    max-width: 386px;
+}
+
+.alex-contact {
+    display: block;
+    float: right;
+    margin-right: 200px;
+    text-align: center;
+    border: 4px solid rgb(98, 56, 0);
+    padding: 20px;
+    box-shadow: 10px 10px rgb(173, 84, 1);
+    max-width: 386px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+#about{
+    padding-top: 140px;
+}
+
+#sort {
+    padding-top: 140px;
+}
+
+#contact {
+    padding-top: 140px;
+}

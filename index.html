@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href = "./style.css" type = "text/css" rel = "stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@600&display=swap" rel="stylesheet">
+        <title>Sorting Animations</title>
+    </head>
+    <body>
+        <header class = "container1">
+            <img src = "LogoBlackHole.png" alt = "Logo" class = "Logo"/>
+            <h1>Sorting Animations</h1>
+            <div class = "navigation">
+                <a href = "#about" class="about-section">About</a>
+                <a href = "#sort" class="header-sort">Sort</a>
+                <a href = "#contact" class="header-contact">Contact</a>
+            </div>
+        </header>
+        <img src = "CubicSpace.jpg" class = "bg">
+
+        <section class = "About-section">
+            <div class = "container2">
+                <h2 class = "about-title" id = "about">
+                    About Us
+                </h2>
+
+                <div class = "ny-img">
+                <img src = "NewYork2.png" alt = "image1" class = "img1" id = "NY"/>
+                </div>
+
+                <div class = "about-text">
+                    <small>
+                        We are two students working on a fun website that displays multiple 
+                        visualizations of different sorting algorithms in javascript. Being 
+                        new to web development this is our first test in making a fully 
+                        fleshed out piece of work that is a showing of our progress in 
+                        learning new technologies and applying them.
+                    </small>
+                </div>
+
+                <div class = "sd-img">
+                <img src = "SanDiego2.png" alt = "image2" class = "img2" id = "SD"/>
+                </div>
+
+            </div>
+        </section>
+
+        <section class = "Sort-section">
+            <h2 class = "sort-title" id = "sort">Sorting Algorithms</h2>
+            <div class = "sort-buttons">
+                <button class = "sort-options" id = "selS" onclick = "setColor('selS');">Selection Sort</button>
+                <button class = "sort-options" id = "insS" onclick = "setColor('insS');">Insertion Sort</button>
+                <button class = "sort-options" id = "bblS" onclick = "setColor('bblS');">Bubble Sort</button>
+            </div>
+
+
+            <canvas id="1canvas" width="1500" height="500" style="border: 8px solid black;"></canvas>
+            <script type="text/javascript" src="animation.js"></script>
+            <div class = "sort-manipulation">
+                <button class = "sort-options" onclick = "randomizeArr()">Randomize</button>
+                <button class = "sort-options" onclick = "clearCanvas()">Clear</button>
+                <button class = "sort-options" onclick = "sortIt()">Begin Sort</button>
+            </div>
+        </section>
+
+        <section class = "Contact-section">
+            <div class = "container3">
+                <div class = "col2">
+                    <h2 class = "contact-title" id = "contact">
+                            Contact Information
+                    </h2>
+                </div>
+                <div class = "doylan-contact">
+                    <h2>Doylan Mihov</h2>
+                    <br>
+                    <br>
+                    <h3>Email: bddoylan@gmail.com</h3>
+                    <br>
+                    <h3>IG: BDDoylan</h3>
+                    <br>
+                    <br>
+                    <a href="https://www.linkedin.com/in/doylan-mihov-1bb1831ab/">LinkedIn: Doylan Mihov</a>
+                    <br>
+                    <br>
+                    <br>
+                    <h4>
+                        Hello everyone! As a 4th year student of computer science with the hopes of having my bachelors in 
+                        this coming year I am ever growing and learning to program at a high level where my skills and
+                        creativity could find use and be applied to work and inventive ideas across all areas.
+                        Developing the skills I call my own and learning new ones I want to put them to good use by 
+                        creating projects and practicing good workflow habits so I can fit in any team and enviroment 
+                        I am placed in.
+                    </h4>
+                </div>
+                <div class = "alex-contact">
+                    <h2>Alex Moree</h2>
+                    <br>
+                    <br>
+                    <h3>Email: alex.d.moree@gmail.com</h3>
+                    <br>
+                    <h3>IG: _alex_moree_</h3>
+                    <br>
+                    <br>
+                    <a href="https://www.linkedin.com/in/alexander-moree-91640219b/">LinkedIn: Alexander Moree</a>
+                    <br>
+                    <br>
+                    <br>
+                    <h4>
+                        Hello there, to whomever is reading this, I am a sophomore and 2nd year student. 
+                        My level of coding is intermediate  with my specialization in C++ and python. 
+                        I enjoy doing projects like this one where I end up learning a lot and anything to better myself in coding and as a team player is ideal. 
+                        I am very proud with how this project turned out with a ground-up development and a lot was learned.     
+                    </h4>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
